@@ -1,0 +1,18 @@
+* Butterworth 1kHz band-pass filter
+V1 n1 0 type=vdc value=0.0 vac=1.0 
+R1 n1 n2 50
+L1 n2 n3 0.245894
+C1 n3 n4 1.03013e-07
+L2 n4 0 9.83652e-05
+C2 n4 0 0.000257513
+L3 n4 n5 0.795775
+C3 n5 n6 3.1831e-08
+L4 n6 0 9.83652e-05
+C4 n6 0 0.000257513
+C5 n7 n8 1.03013e-07
+L5 n6 n7 0.245894
+R2 n8 0 50
+
+.tran tstop=150n tstep=.1n method=trap uic=2
+
+ start=.97e3 stop=1.03e3 nsteps=100

@@ -1,0 +1,14 @@
+* Butterworth Low-pass filter
+V1 n1 0 type=vdc vdc=0.0 vac=1.0 
+R1 n1 n2 600
+L1 n2 n3 0.01524
+C1 n3 0 1.1937e-07
+L2 n3 n4 0.06186
+C2 n4 0 1.5512e-07
+R2 n4 0 1200
+
+.tran tstop=150n tstep=.1n method=trap uic=2
+
+
+.ac start=1e3 stop=1.0e4 nsteps=200
+

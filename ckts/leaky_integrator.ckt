@@ -1,0 +1,13 @@
+* LEAKY INTEGRATOR WITH FINITE GAIN
+* v1 in 0 type=vdc vdc=1
+v1 in 0 type=vdc vdc=5 vac=1 
+* arg=0 type=pulse v1=0 v2=1 td=5e-07 per=2 tr=1e-12 tf=1e-12 pw=1
+
+r1 in inv 1k
+e1 out 0 0 inv 1e6
+c1 inv out 1p
+r2 inv out 1k
+
+.symbolic tf=v1 ac=1
+.op
+.tran tstop=150n tstep=.1n method=trap uic=2
