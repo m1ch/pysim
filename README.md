@@ -1,5 +1,24 @@
 # Spice simulation in Python
-### Workshop
+## Abstract
+
+Python ist eine Wunderbare Sprache. Sie ist mittlerweile auf sämtlichen Plattformen heimisch und wird für jeden erdenklichen Anwendungszweck verwendet. 
+So auch in der Analyse und Auswertung großer Mengen an Simulationsdaten. Allerdings ist es häufig der Fall, dass die Simulationen mit eigenständigen Programmen gemacht werden und die Daten für die Auswertung erst im Nachhinein im Python eingelesen werden. 
+
+Einen Ansatz wie man diese Lücke zwischen Simulation und Auswertung für elektronische Analogsimulationen schließen kann möchte ich in meinem Vortag behandeln. 
+
+Dabei werde ich zeigen 
+* wie man Schaltungen als Spice Datei einließt, oder direkt in Python erstellt,
+* wie man Schaltungsblöcke als Funktion erstellt, 
+* wie man parametrische Simulationen laufen lässt, 
+* wie man die Simulationsergebnisse darstellt,
+* und wie man die Simulationsergebnisse automatisch auswerten kann.
+
+Für die in der Präsentation gezeigten Beispiele kommen die folgenden Bibliotheken zum Einsatz:
+    pyspice, ahkab, mathplotlib, pandas, numpy, ...
+
+
+
+## Workshop
 
 The workshop examples are mainly taken from the ahkab page. 
 
